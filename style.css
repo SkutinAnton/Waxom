@@ -11,20 +11,25 @@ body {
 }
 
 .wrapper {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
+
+/*-----------------------main--------------------------*/
 
 .main {
     height: 1024px;
     width: 100%;
     background: url("img/main.png");
     position: relative;
+    background-size: cover;
 }
 
 .main .header {
-    padding: 41px 377px 0;
+    padding-top: 41px;
     height: 56px;
+    margin: 0 auto;
+    max-width: 1167px
 }
 
 .main .header .logo {
@@ -126,7 +131,6 @@ body {
     box-shadow: 0 3px 0 #68594e;
     margin: 49px 211px;
     outline: none;
-    /*transition: 0.3s;*/
 }
 
 .main .portfolio button:hover {
@@ -194,9 +198,13 @@ body {
     background-color: rgba(255, 255, 255, 0);
 }
 
+/*-----------------------allDepartments----------------------------*/
+
 .allDepartments {
     height: 296px;
-    padding: 78px 350px 0;
+    padding-top: 78px;
+    margin: 0 auto;
+    max-width: 1218px;
 }
 
 .allDepartments .department {
@@ -250,22 +258,30 @@ body {
     width: 120px;
 }
 
+/*-------------------------ideas------------------------------*/
+
 .ideas {
     background: rgba(231, 228, 222, 0.48);
     height: 699px;
+}
+
+.ideas .wrapperIdeas {
     padding-top: 77px;
     position: relative;
     box-sizing: border-box;
+    width: 1228px;
+    margin: 0 auto;
+    height: 100%;
 }
 
-.ideas h2 {
+.ideas .wrapperIdeas h2 {
     font-family: "Raleway", sans-serif;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
 }
 
-.ideas p {
+.ideas .wrapperIdeas p {
     font-family: "Montserrat", sans-serif;
     color: #8c8c8c;
     font-size: 16px;
@@ -276,60 +292,73 @@ body {
     margin: 16px auto;
 }
 
-.ideas .slide_center {
+.ideas .wrapperIdeas .slide_center {
     background: url("img/slide_center.png");
     width: 770px;
     height: 482px;
     position: absolute;
     top: 217px;
-    left: 576px;
+    left: 230px;
     z-index: 2;
     transition: 0.5s;
 }
 
-.ideas .slide_right {
+.ideas .wrapperIdeas .slide_right {
     background: url("img/slide_right.png");
     width: 770px;
     height: 400px;
     position: absolute;
     top: 299px;
-    left: 805px;
+    left: 460px;
     z-index: 0;
     transition: 0.8s;
 }
 
-.ideas .slide_left {
+.ideas .wrapperIdeas .slide_left {
     background: url("img/slide_left.png");
     width: 770px;
     height: 400px;
     position: absolute;
     top: 299px;
-    left: 346px;
+    left: 0;
     z-index: 1;
     transition: 0.8s;
 }
 
-.ideas .slide_center:hover {
+.ideas .wrapperIdeas .slide_center:hover {
     transform: scale(1.02) translateY(-4px);
     cursor: pointer;
 }
 
-.ideas .slide_right:hover {
+.ideas .wrapperIdeas .slide_right:hover {
     cursor: pointer;
     transform: scale(1.12) translate(220px, -22px);
 }
 
-.ideas .slide_left:hover {
+.ideas .wrapperIdeas .slide_left:hover {
     cursor: pointer;
     transform: scale(1.12) translate(-220px, -21px);
 }
+
+/*-------------------------wordpress----------------------------*/
 
 .wordpress {
     background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     height: 150px;
 }
 
-.wordpress h2 {
+.wordpress .wrapperWordpress {
+    box-sizing: border-box;
+    padding: 44px;
+    width: 1257px;
+    margin: 0 auto;
+}
+
+.wordpress .wrapperWordpress .wordpressLeft {
+    float: left;
+}
+
+.wordpress .wrapperWordpress h2 {
     font-family: "Raleway", sans-serif;
     color: #ffffff;
     font-size: 28px;
@@ -337,11 +366,11 @@ body {
     text-align: left;
 }
 
-.wordpress h2 span {
+.wordpress .wrapperWordpress h2 span {
     color: #c7b299;
 }
 
-.wordpress p {
+.wordpress .wrapperWordpress p {
     font-family: "Montserrat", sans-serif;
     color: #716865;
     font-size: 18px;
@@ -350,7 +379,7 @@ body {
     float: left;
 }
 
-.wordpress button {
+.wordpress .wrapperWordpress button {
     border-radius: 3px;
     background-color:  #998675;
     width: 170px;
@@ -364,4 +393,150 @@ body {
     border: none;
     outline: none;
     float: right;
+    margin-top: 6px;
+    box-shadow: 0 3px 0 #68594e;
+}
+
+.wordpress .wrapperWordpress button:hover {
+    background-color: #8b7867;
+    cursor: pointer;
+}
+
+.wordpress .wrapperWordpress button:active {
+    box-shadow: inset 0 2px 2px 2px #68594e;
+    padding-top: 2px;
+    height: 53px;
+    margin-bottom: 46px;
+}
+
+.projects {
+    height: 1162px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.projects > h2 {
+    font-family: "Raleway", sans-serif;
+    color:  #555555;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 73px;
+}
+
+.projects p {
+    font-family: "Montserrat", sans-serif;
+    color:  #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    width: 770px;
+    margin: 18px auto;
+}
+
+.projects ul {
+    width: 694px;
+    margin: 40px auto 32px;
+
+}
+
+.projects ul li {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #d9d3d3;
+    box-sizing: border-box;
+    background-color:  rgba(17, 17, 17, 0);
+    padding: 7px 22px;
+    margin-right: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.projects ul li:last-child {
+    margin-right: 0;
+}
+
+.projects ul li:hover {
+    background-color: #998675;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.projects ul li:active {
+    box-shadow: 0 0 7px 0 #8c8c8c;
+    transition: 0s;
+}
+
+.projects article {
+    background-color: #eeebe7;
+    float: left;
+    margin: 0 30px 29px 0;
+    height: 337px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.projects article:nth-of-type(3),
+.projects article:nth-of-type(6) {
+    margin-right: 0;
+}
+
+.projects article h2 {
+    font-family: "Raleway", sans-serif;
+    color: #c7b29a;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin: 22px 0 0 30px;
+}
+
+.projects article h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #878282;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    margin: 3px 0 0 30px;
+}
+
+.projects article:hover {
+    background-color: #655b59;
+    cursor: pointer;
+}
+
+.projects button {
+    border-radius: 3px;
+    background-color:  #998675;
+    width: 170px;
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 0 #68594e;
+    margin: 10px auto 0;
+    display: block;
+}
+
+.projects  button:hover {
+    background-color: #8b7867;
+    cursor: pointer;
+}
+
+.projects  button:active {
+    box-shadow: inset 0 2px 2px 2px #68594e;
+    padding-top: 2px;
+    height: 54px;
+    margin-bottom: 46px;
+}
+
+.clearFix {
+    clear: both;
 }

@@ -310,7 +310,7 @@ body {
 }
 
 .ideas .slide_center:hover {
-    transform: scale(1.02) translateY(-5px);
+    transform: scale(1.02) translateY(-4px);
     cursor: pointer;
 }
 
@@ -321,7 +321,7 @@ body {
 
 .ideas .slide_left:hover {
     cursor: pointer;
-    transform: scale(1.12) translate(-220px, -22px);
+    transform: scale(1.12) translate(-220px, -21px);
 }
 
 .wordpress {

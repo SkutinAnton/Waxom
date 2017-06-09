@@ -635,7 +635,7 @@ body {
     height: 695px;
     margin: 0 auto;
     box-sizing: border-box;
-    background: url(img/iPhone.png) no-repeat 39px 78px;
+    background: url(img/iPhone.png) no-repeat 39px 80px;
     padding: 189px 0 0 492px;
 }
 
@@ -675,4 +675,49 @@ body {
     position: relative;
 }
 
-/*тест*/
+/*-----------------------status-------------------------*/
+
+.status {
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    height: 300px;
+}
+
+.status .wrapperStatus {
+    width: 910px;
+    margin: 0 auto;
+    padding-top: 69px;
+}
+
+.status .wrapperStatus div {
+    display: inline-block;
+    margin-right: 92px;
+}
+.status .wrapperStatus div:last-child {
+    margin-right: 0;
+}
+
+.status .wrapperStatus div img {
+    display: block;
+    margin: 0 auto;
+}
+
+.status .wrapperStatus div h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.status .wrapperStatus div p {
+    font-family: "Montserrat", sans-serif;
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: ;
+}

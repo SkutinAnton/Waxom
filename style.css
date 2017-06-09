@@ -683,14 +683,15 @@ body {
 }
 
 .status .wrapperStatus {
-    width: 910px;
+    width: 923px;
     margin: 0 auto;
     padding-top: 69px;
 }
 
 .status .wrapperStatus div {
     display: inline-block;
-    margin-right: 92px;
+    margin-right: 61px;
+    width: 132px;
 }
 .status .wrapperStatus div:last-child {
     margin-right: 0;
@@ -719,5 +720,140 @@ body {
     line-height: 20px;
     text-align: center;
     margin-top: 15px;
-    text-transform: ;
+    text-transform: uppercase;
 }
+
+.status .wrapperStatus div p:after {
+    content: " ";
+    display: block;
+    width: 50px;
+    border-top: 2px solid #c4c1bb;
+    margin: 30px auto 0;
+    transition: 0.25s;
+}
+
+.posts {
+     height: 753px;
+}
+
+.posts .wrapperPosts {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.posts .wrapperPosts > h2 {
+    font-family: "Raleway", sans-serif;
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 74px;
+}
+
+.posts .wrapperPosts > p {
+    font-family: "Montserrat", sans-serif;
+    color:  #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    width: 756px;
+    margin: 17px auto;
+}
+
+.posts .wrapperPosts .post {
+    width: 370px;
+    height: 395px;
+    background: #eeebe7;
+    float: left;
+    margin-right: 30px;
+    margin-top: 19px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.posts .wrapperPosts .post:nth-of-type(3){
+    margin-right: 0;
+}
+
+.posts .wrapperPosts .post .date {
+    position: absolute;
+    top: 18px;
+    left: 21px;
+    background-color: #363636;
+    width: 50px;
+    color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.posts .wrapperPosts .post .date .topDate {
+    height: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+.posts .wrapperPosts .post .date .bottomDate {
+    background-color: #252525;
+    height: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 2px;
+}
+
+.posts .wrapperPosts .post h2 {
+    font-family: "Raleway", sans-serif;
+    color: #555555;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 29px;
+    margin-top: 21px;
+}
+
+.posts .wrapperPosts .post p {
+    font-family: "Montserrat", sans-serif;
+    color:  #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 29px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+.posts .wrapperPosts .post a {
+    margin-left: 29px;
+    font-family: "Montserrat", sans-serif;
+    color:  #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.posts .wrapperPosts .post a:after {
+    content: url("img/arrowPost.png");
+    left: 10px;
+    top: -1px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.posts .wrapperPosts .post a:hover:after {
+    left: 14px;
+}
+

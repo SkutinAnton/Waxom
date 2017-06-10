@@ -979,6 +979,7 @@ body {
     width: 1174px;
     margin: 0 auto;
 }
+
 .footer .wrapperFooter .topFooter {
     height: 508px;
     box-sizing: border-box;
@@ -1191,3 +1192,100 @@ body {
 .footer .wrapperFooter .topFooter .twitter .wall article:hover time {
     color: #fff;
 }
+
+/*------------------------widget-----------------------*/
+
+.footer .wrapperFooter .topFooter .widget {
+    margin-top: 22px;
+    margin-left: 23px;
+}
+
+.footer .wrapperFooter .topFooter .widget h2 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer .wrapperFooter .topFooter .widget .block {
+    display: grid;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 98px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 206px;
+    margin-top: 26px;
+}
+
+.footer .wrapperFooter .topFooter .widget .block div:nth-child(1) {
+    background: url("img/widget1.png");
+    background-size: cover;
+}
+
+.footer .wrapperFooter .topFooter .widget .block div:nth-child(2) {
+    background: url("img/widget2.png");
+    background-size: cover;
+}
+
+.footer .wrapperFooter .topFooter .widget .block div:nth-child(3) {
+    background: url("img/widget3.png");
+    background-size: cover;
+}
+
+.footer .wrapperFooter .topFooter .widget .block div:nth-child(4) {
+    background: url("img/widget4.png");
+    background-size: cover;
+}
+
+.footer .wrapperFooter .topFooter .widget .block div:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*-----------------------bottomFooter------------------------*/
+
+.footer .bottomFooter {
+    background-color: #111111;
+    height: 111px;
+}
+
+.footer .bottomFooter .wrapperFooter {
+    width: 1174px;
+    margin: 0 auto;
+    padding: 40px 4px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.footer .bottomFooter .wrapperFooter .copyright {
+    float: left;
+}
+
+.footer .bottomFooter .wrapperFooter .copyright span {
+    color:  #545454;
+    font-size: 13px;
+    font-weight: 500;
+    border-right: 1px solid #2c2c2c;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.footer .bottomFooter .wrapperFooter .copyright span:last-child {
+    border: none;
+}
+
+.footer .bottomFooter .wrapperFooter .copyright span:hover {
+    color: #c7b299;
+    cursor: pointer;
+}
+
+.footer .bottomFooter .wrapperFooter address {
+    float: right;
+    font-style: normal;
+    font-family: "Raleway", sans-serif;
+    color:  #545454;
+}
+
+
+

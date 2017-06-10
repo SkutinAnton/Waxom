@@ -497,7 +497,7 @@ body {
 
 .projects article .description i {
     margin: 93px 20px 0;
-    font-size: 35px;
+    font-size: 25px;
     color: #d7d3d3;
 }
 
@@ -732,8 +732,10 @@ body {
     transition: 0.25s;
 }
 
+/*-------------------------posts-------------------------------*/
+
 .posts {
-     height: 753px;
+     height: 679px;
 }
 
 .posts .wrapperPosts {
@@ -772,6 +774,7 @@ body {
     border-radius: 6px;
     position: relative;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 .posts .wrapperPosts .post:nth-of-type(3){
@@ -787,6 +790,7 @@ body {
     color: #ffffff;
     border-radius: 5px;
     overflow: hidden;
+    z-index: 2;
 }
 
 .posts .wrapperPosts .post .date .topDate {
@@ -798,6 +802,7 @@ body {
     text-align: center;
     padding-top: 7px;
     box-sizing: border-box;
+    transition: background-color 0.3s;
 }
 
 .posts .wrapperPosts .post .date .bottomDate {
@@ -810,6 +815,22 @@ body {
     text-align: center;
     box-sizing: border-box;
     padding-top: 2px;
+    transition: background-color 0.3s;
+}
+
+.posts .wrapperPosts .post .description {
+    height: 55.5%;
+    width: 100%;
+    background: #000;
+    opacity: 0.6;
+    transition: 0.7s;
+    position: absolute;
+    top: -55.5%;
+    text-align: center;
+}
+
+.posts .wrapperPosts .post:hover .description {
+    top: 0;
 }
 
 .posts .wrapperPosts .post h2 {
@@ -857,3 +878,93 @@ body {
     left: 14px;
 }
 
+.posts .wrapperPosts .post:hover {
+    background-color: #362f2d;
+    cursor: pointer;
+}
+
+.posts .wrapperPosts .post:hover h2 {
+    color: #c7b299;
+}
+
+.posts .wrapperPosts .post:hover p {
+    color: #ffffff;
+}
+
+.posts .wrapperPosts .post:hover .date .topDate {
+    background-color:  #c7b299;
+}
+
+.posts .wrapperPosts .post:hover .date .bottomDate {
+    background-color:  #a48d72;
+}
+
+.posts .wrapperPosts .arrowPosts {
+    width: 72px;
+    margin: 38px auto 0;
+    border-bottom: 2px solid #e0d7ca;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    border-radius: 23px;
+}
+
+.posts .wrapperPosts .arrowPosts i {
+    color: #c7b299;
+    font-size: 30px;
+    transition: 0.3s;
+    width: 23px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.posts .wrapperPosts .arrowPosts i:first-child {
+    margin-right: 20px;
+}
+
+.posts .wrapperPosts .arrowPosts i:hover {
+    transform: scale(1.2) translateX(3px);
+    cursor: pointer;
+}
+
+.posts .wrapperPosts .arrowPosts i:first-child:hover {
+    transform: scale(1.2) translateX(-3px);
+}
+
+/*-----------------------partner-----------------------*/
+
+.partner {
+    background: url("img/partner.png");
+    background-size: cover;
+    height: 489px;
+}
+
+.partner .wrapperPartner {
+    width: 1214px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 141px 53px 0;
+    height: 100%;
+}
+
+.partner .wrapperPartner img{
+    margin-right: 89px;
+    float: left;
+}
+
+.partner .wrapperPartner img:last-child{
+    margin-right: 0;
+}
+
+.partner .wrapperPartner img:nth-child(1) {
+   margin-top: 40px;
+}
+
+.partner .wrapperPartner img:nth-child(3) {
+    margin-top: 39px;
+}
+
+.partner .wrapperPartner img:nth-child(4) {
+    margin-top: 21px;
+}
+
+/*--------------------footer------------------------*/

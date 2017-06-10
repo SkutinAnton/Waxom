@@ -584,13 +584,35 @@ body {
     position: relative;
 }
 
+@keyframes round {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .movie .play {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    background: url("img/play.png") 15px 15px no-repeat, rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     margin: 60px auto 0;
     transition: 0.2s;
+    position: relative;
+}
+
+.movie .play .playButton {
+    background: url("img/play2.png") 15px 15px no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.movie .play .playRound {
+    width: 100px;
+    height: 100px;
+    background: url("img/play.png") 15px 15px no-repeat;
+    animation: round 3s linear infinite;
+    position: absolute;
 }
 
 .movie h2 {
@@ -624,7 +646,7 @@ body {
 }
 
 .movie .play:hover {
-    background: url("img/play.png") 15px 15px no-repeat, rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -819,13 +841,13 @@ body {
 }
 
 .posts .wrapperPosts .post .description {
-    height: 55.5%;
+    height: 56%;
     width: 100%;
     background: #000;
     opacity: 0.6;
     transition: 0.7s;
     position: absolute;
-    top: -55.5%;
+    top: -56%;
     text-align: center;
 }
 
@@ -1277,6 +1299,11 @@ body {
 
 .footer .bottomFooter .wrapperFooter .copyright span:hover {
     color: #c7b299;
+    cursor: pointer;
+}
+
+.footer .bottomFooter .wrapperFooter .copyright span:first-child:hover {
+    color: #545454;
     cursor: pointer;
 }
 

@@ -967,4 +967,227 @@ body {
     margin-top: 21px;
 }
 
-/*--------------------footer------------------------*/
+/*--------------------topFooter------------------------*/
+
+.footer {
+    background-color:  #191919;
+    height: 619px;
+    color: #626262;
+}
+
+.footer .wrapperFooter {
+    width: 1174px;
+    margin: 0 auto;
+}
+.footer .wrapperFooter .topFooter {
+    height: 508px;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.footer .wrapperFooter .topFooter > section {
+    float: left;
+    width: 275px;
+}
+
+/*----------------------company----------------------*/
+
+.footer .wrapperFooter .topFooter .company {
+    margin-left: 3px;
+}
+
+.footer .wrapperFooter .topFooter .company .logo {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+    width: 185px;
+    height: 56px;
+    background: url("img/logo.png") no-repeat;
+    padding-top: 7px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.footer .wrapperFooter .topFooter .company p {
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer .wrapperFooter .topFooter .company a {
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 26px;
+    display: inline-block;
+}
+
+.footer .wrapperFooter .topFooter .company a:after {
+    content: url("img/arrowPost.png");
+    left: 10px;
+    top: -1px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .company a:hover:after {
+    left: 14px;
+}
+
+/*-----------------------------recent------------------------*/
+
+.footer .wrapperFooter .topFooter .recent {
+    margin-top: 22px;
+    margin-left: 24px;
+    position: relative;
+}
+
+.footer .wrapperFooter .topFooter .recent h2 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall {
+    overflow: auto;
+    height: 275px;
+    word-break: break-all;
+    margin-top: 21px;
+    margin-left: 2px;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall::-webkit-scrollbar {
+    width: 0;
+}
+
+.footer .wrapperFooter .topFooter .recent i {
+    position: absolute;
+    right: -14px;
+    top: 181px;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .recent:hover i {
+    opacity: 0.7;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall article {
+    margin-bottom: 13px;
+    border-bottom: 1px solid #252525;
+    padding-bottom: 21px;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall article time {
+    color: #918f62;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall article p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall article:hover {
+    color: #c7b299;
+    cursor: pointer;
+}
+
+.footer .wrapperFooter .topFooter .recent .wall article:hover time {
+    color: #fff;
+}
+
+/*-----------------------------twitter-----------------------------*/
+
+
+.footer .wrapperFooter .topFooter .twitter {
+    margin-top: 22px;
+    margin-left: 24px;
+    position: relative;
+}
+
+.footer .wrapperFooter .topFooter .twitter h2 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall {
+    overflow: auto;
+    height: 275px;
+    word-break: break-all;
+    margin-top: 21px;
+    margin-left: 2px;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall::-webkit-scrollbar {
+    width: 0;
+}
+
+.footer .wrapperFooter .topFooter .twitter i {
+    position: absolute;
+    right: -14px;
+    top: 181px;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .twitter:hover i {
+    opacity: 0.7;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall article {
+    margin-bottom: 13px;
+    border-bottom: 1px solid #252525;
+    padding-bottom: 21px;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall article time {
+    color: #918f62;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall article p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall article p span {
+    color: #00bff3;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall article:hover {
+    color: #c7b299;
+    cursor: pointer;
+}
+
+.footer .wrapperFooter .topFooter .twitter .wall article:hover time {
+    color: #fff;
+}

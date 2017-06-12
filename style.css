@@ -52,6 +52,15 @@ body {
     margin: 16px 0 0 190px;
 }
 
+.main .header > i {
+    display: none;
+    color: #e3e3e3;
+    font-size: 32px;
+    transition: 0.3s;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
 .main .header nav li {
     list-style-type: none;
     display: inline-block;
@@ -294,6 +303,7 @@ body {
 
 .ideas .wrapperIdeas .slide_center {
     background: url("img/slide_center.png");
+    background-size: cover;
     width: 770px;
     height: 482px;
     position: absolute;
@@ -305,6 +315,7 @@ body {
 
 .ideas .wrapperIdeas .slide_right {
     background: url("img/slide_right.png");
+    background-size: cover;
     width: 770px;
     height: 400px;
     position: absolute;
@@ -316,6 +327,7 @@ body {
 
 .ideas .wrapperIdeas .slide_left {
     background: url("img/slide_left.png");
+    background-size: cover;
     width: 770px;
     height: 400px;
     position: absolute;
@@ -332,12 +344,14 @@ body {
 
 .ideas .wrapperIdeas .slide_right:hover {
     cursor: pointer;
-    transform: scale(1.12) translate(220px, -22px);
+    transform: scale(1.04) translateY(-8px);
+    z-index: 2;
 }
 
 .ideas .wrapperIdeas .slide_left:hover {
     cursor: pointer;
-    transform: scale(1.12) translate(-220px, -21px);
+    transform: scale(1.04) translateY(-8px);
+    z-index: 2;
 }
 
 /*-------------------------wordpress----------------------------*/
@@ -350,7 +364,7 @@ body {
 .wordpress .wrapperWordpress {
     box-sizing: border-box;
     padding: 44px;
-    width: 1257px;
+    max-width: 1257px;
     margin: 0 auto;
 }
 
@@ -993,7 +1007,6 @@ body {
 
 .footer {
     background-color:  #191919;
-    height: 619px;
     color: #626262;
 }
 
@@ -1314,5 +1327,579 @@ body {
     color:  #545454;
 }
 
+@media all and (max-width: 1283px) {
+    .ideas .wrapperIdeas .slide_center {
+        width: 664px;
+        height: 416px;
+        top: 283px;
+        left: 284px;
+    }
+
+    .ideas .wrapperIdeas .slide_left {
+        width: 604px;
+        height: 314px;
+        top: 385px;
+        left: 98px;
+    }
+
+    .ideas .wrapperIdeas .slide_right {
+        width: 604px;
+        height: 314px;
+        top: 385px;
+        left: 533px;
+    }
+
+    .ideas .wrapperIdeas .slide_left:hover {
+        transform: scale(1.04) translateY(-5px);
+    }
+
+    .ideas .wrapperIdeas .slide_right:hover {
+        transform: scale(1.04) translateY(-5px);
+    }
+}
+
+@media all and (max-width: 1246px) {
+
+    .main {
+        height: 720px;
+    }
+
+    .main .header nav {
+        margin: 16px 0 0 60px;
+    }
+
+    .main .portfolio {
+        margin: 136px auto 0;
+    }
+
+    .main .arrow-left {
+        top: 269px;
+        left: 99px;
+    }
+
+    .main .arrow-right {
+        top: 269px;
+        right: 99px;
+    }
+
+    .main .points {
+        margin: 140px auto 0;
+    }
+
+    .allDepartments {
+        width: 740px;
+        margin: 0 auto;
+        height: 490px;
+        padding-top: 40px;
+    }
+
+    .allDepartments .department {
+        width: 322px;
+    }
+
+    .allDepartments .department:nth-child(3),
+    .allDepartments .department:nth-child(4) {
+        margin-top: 60px;
+    }
+
+    .allDepartments .department i {
+        margin: 0 0 25px 140px;
+    }
+
+    .allDepartments .department p:after {
+        margin: 20px auto 0;
+    }
+
+    .ideas {
+        height: 586px;
+    }
+
+    .ideas .wrapperIdeas {
+        width: 790px;
+        padding-top: 50px;
+    }
+
+    .ideas .wrapperIdeas .slide_center {
+        width: 634px;
+        height: 396px;
+        top: 190px;
+        left: 75px;
+    }
+
+    .ideas .wrapperIdeas .slide_left {
+        width: 574px;
+        height: 298px;
+        top: 288px;
+        left: 6px;
+    }
+
+    .ideas .wrapperIdeas .slide_right {
+        width: 574px;
+        height: 298px;
+        top: 288px;
+        left: 220px;
+    }
+
+    .projects {
+        height: 1420px;
+        width: 770px;
+    }
+
+    .projects ul {
+        width: 492px;
+        margin: 35px auto 32px;
+    }
+
+    .projects ul li {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .projects article:nth-of-type(1n) {
+        margin-right: 30px;
+    }
+
+    .projects article:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .movie {
+        height: 529px;
+        padding-top: 60px;
+    }
+
+    .mobile {
+        width: 814px;
+        height: 590px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background: url(img/iPhone.png) no-repeat 2px 69px;
+        padding: 65px 0 0 320px;
+        background-size: 360px;
+    }
+
+    .movie .video {
+        margin-top: -536px;
+    }
+
+    .status {
+        height: 240px;
+    }
+
+    .status .wrapperStatus {
+        padding-top: 40px;
+    }
+
+    .status .wrapperStatus div h2 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .status .wrapperStatus div p:after {
+        margin: 20px auto 0;
+    }
+
+    .posts {
+        height: 980px;
+    }
+
+    .posts .wrapperPosts {
+        width: 756px;
+    }
+
+    .posts .wrapperPosts > h2 {
+        margin-top: 40px;
+    }
+
+    .posts .wrapperPosts .post {
+        width: 757px;
+        height: 220px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .posts .wrapperPosts .post img {
+        float: left;
+        margin-right: 40px;
+    }
+
+    .posts .wrapperPosts .post h2 {
+        margin-top: 50px;
+    }
+
+    .posts .wrapperPosts .post .description {
+        height: 100%;
+        width: 49%;
+        left: -56%;
+        top: 0;
+    }
+
+    .posts .wrapperPosts .post:hover .description {
+        left: 0;
+    }
+
+    .posts .wrapperPosts .post a {
+        margin-left: 0;
+    }
+
+    .partner .wrapperPartner {
+        width: 510px;
+        padding: 38px 0 0;
+    }
+
+    .partner .wrapperPartner img:nth-child(2) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer .wrapperFooter {
+        width: 876px;
+        margin: 0 auto;
+    }
+
+    .footer .wrapperFooter .topFooter {
+        height: 680px;
+    }
+
+    .footer .wrapperFooter .topFooter .widget {
+        float: none;
+        width: 500px;
+        margin: 400px auto 0;
+    }
+
+    .footer .wrapperFooter .topFooter .widget h2 {
+        text-align: center;
+    }
+
+    .footer .wrapperFooter .topFooter .widget .block {
+        grid-template-columns: 130px 130px 130px 130px;
+    }
+
+    .footer .bottomFooter .wrapperFooter {
+        width: 880px;
+    }
+}
+
+@media all and (max-width: 1246px) {
+
+    .main .header .logo {
+        margin-left: 20px;
+    }
+
+    .main .header .shop {
+        float: left;
+        margin: 15px 0 0 31%;
+    }
+
+    .main .header nav {
+        display: none;
+    }
+
+    .main .header > i {
+        display: block;
+        float: right;
+    }
+
+    .main .header > i:hover {
+        color: #c7b29a;
+        cursor: pointer;
+    }
+}
+
+@media all and (max-width: 941px) {
+
+    .main .header .shop {
+        float: left;
+        margin: 15px 0 0 22%;
+    }
+
+    .main .portfolio h2 {
+        font-size: 30px;
+    }
+
+    .main .portfolio h3 {
+        font-size: 40px;
+    }
+
+    .main .arrow-left {
+        left: 19px;
+    }
+
+    .main .arrow-right {
+        right: 19px;
+    }
+
+    .main .portfolio {
+        width: 450px;
+    }
+
+    .main .portfolio button {
+        margin: 49px 139px;
+    }
+
+    .main .points {
+        margin: 130px auto 0;
+    }
+
+    .ideas {
+        height: 539px;
+    }
+
+    .ideas .wrapperIdeas {
+        width: 620px;
+    }
+
+    .ideas .wrapperIdeas p {
+        width: 540px;
+    }
+
+    .ideas .wrapperIdeas .slide_center {
+        width: 557px;
+        height: 349px;
+        top: 190px;
+        left: 33px;
+    }
+
+    .ideas .wrapperIdeas .slide_center:hover {
+        transform: scale(1.02) translateY(-3px);
+    }
+
+    .ideas .wrapperIdeas .slide_left,
+    .ideas .wrapperIdeas .slide_right {
+        display: none;
+    }
+
+    .wordpress {
+        height: 160px;
+    }
+
+    .wordpress .wrapperWordpress {
+        padding: 15px;
+    }
+
+    .wordpress .wrapperWordpress .wordpressLeft {
+        float: none;
+    }
+
+    .wordpress .wrapperWordpress h2,
+    .wordpress .wrapperWordpress p {
+        text-align: center;
+        float: none;
+    }
+
+    .wordpress .wrapperWordpress button {
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .projects {
+        height: 1170px;
+        width: 530px;
+    }
+
+    .projects > h2 {
+        margin-top: 50px;
+    }
+
+    .projects p {
+        width: 430px;
+    }
+
+    .projects article {
+        width: 250px;
+        height: 245px;
+    }
+
+    .projects article img {
+        width: 260px;
+    }
+
+    .projects article h2 {
+        font-size: 17px;
+        margin: 15px 0 0 20px;
+    }
+
+    .projects article h3 {
+        font-size: 13px;
+        margin: 3px 0 0 20px;
+    }
+
+    .projects article .description {
+        height: 68.5%;
+        top: -68.5%;
+    }
+
+    .movie {
+        height: 470px;
+    }
+
+    .mobile {
+        background: none;
+        width: 500px;
+        padding: 0;
+        height: 460px;
+    }
+
+    .mobile h2,
+    .mobile p {
+        text-align: center;
+    }
+
+    .mobile ul {
+        margin: 31px 0 0 66px;
+    }
+
+    .status {
+        height: 275px;
+    }
+
+    .status .wrapperStatus {
+        width: 450px;
+        padding-top: 13px;
+    }
+
+    .status .wrapperStatus div {
+        margin-right: 22px;
+        margin-bottom: 15px;
+    }
+
+    .status .wrapperStatus div:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .status .wrapperStatus div img {
+        width: 35px;
+    }
+
+    .status .wrapperStatus div h2 {
+        font-size: 29px;
+        margin-top: 7px;
+    }
+
+    .status .wrapperStatus div p {
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .status .wrapperStatus div p:after {
+        margin: 10px auto 0;
+    }
+
+    .status .wrapperStatus div:nth-child(4) {
+        margin-left: 75px;
+    }
+
+    .posts {
+        height: 1402px;
+    }
+
+    .posts .wrapperPosts {
+        width: 445px;
+    }
+
+    .posts .wrapperPosts > p {
+        width: 438px;
+    }
+
+    .posts .wrapperPosts .post {
+        width: 370px;
+        height: 360px;
+        float: none;
+        margin: 30px auto;
+    }
+
+    .posts .wrapperPosts .post:nth-of-type(3) {
+        margin: 30px auto;
+    }
+
+    .posts .wrapperPosts .post .description {
+        height: 61%;
+        width: 100%;
+        top: -61%;
+        left: 0;
+    }
+
+    .posts .wrapperPosts .post:hover .description {
+        top: 0;
+    }
+
+    .posts .wrapperPosts .post img {
+        float: none;
+    }
+
+
+    .posts .wrapperPosts .post h2 {
+        margin-top: 10px;
+    }
+
+    .posts .wrapperPosts .post p {
+        margin-bottom: 10px;
+    }
+
+    .posts .wrapperPosts .post a {
+        margin-left: 29px;
+    }
+
+    .partner {
+        height: 340px;
+    }
+
+    .partner .wrapperPartner {
+        width: 350px;
+    }
+
+    .partner .wrapperPartner img {
+        width: 130px;
+    }
+
+    .footer .wrapperFooter .topFooter .company {
+        display: none;
+    }
+
+    .footer .wrapperFooter {
+        width: 575px;
+    }
+
+    .footer .wrapperFooter .topFooter {
+        padding-top: 24px;
+        height: 590px;
+    }
+
+    .footer .wrapperFooter .topFooter .recent {
+        margin-left: 0;
+    }
+
+    .footer .wrapperFooter .topFooter .widget {
+        width: 430px;
+    }
+
+    .footer .wrapperFooter .topFooter .widget .block {
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 80px;
+        height: 90px;
+    }
+
+    .footer .bottomFooter .wrapperFooter {
+        width: 420px;
+    }
+
+    .footer .bottomFooter .wrapperFooter address {
+        float: none;
+        width: 410px;
+        margin: 0 auto;
+    }
+
+    .footer .bottomFooter .wrapperFooter address {
+        float: none;
+        width: 216px;
+        margin: 45px auto 0;
+    }
+}
+
+@media all and (max-width: 760px) {
+
+
+}
 
 

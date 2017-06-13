@@ -140,6 +140,7 @@ body {
     box-shadow: 0 3px 0 #68594e;
     margin: 49px 211px;
     outline: none;
+    transition: background 0.3s;
 }
 
 .main .portfolio button:hover {
@@ -310,7 +311,7 @@ body {
     top: 217px;
     left: 230px;
     z-index: 2;
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 
 .ideas .wrapperIdeas .slide_right {
@@ -322,7 +323,7 @@ body {
     top: 299px;
     left: 460px;
     z-index: 0;
-    transition: 0.8s;
+    transition: transform 0.8s;
 }
 
 .ideas .wrapperIdeas .slide_left {
@@ -334,7 +335,7 @@ body {
     top: 299px;
     left: 0;
     z-index: 1;
-    transition: 0.8s;
+    transition: transform 0.8s;
 }
 
 .ideas .wrapperIdeas .slide_center:hover {
@@ -409,6 +410,7 @@ body {
     float: right;
     margin-top: 6px;
     box-shadow: 0 3px 0 #68594e;
+    transition: background 0.3s;
 }
 
 .wordpress .wrapperWordpress button:hover {
@@ -465,6 +467,7 @@ body {
     margin-right: 10px;
     text-align: center;
     transition: 0.5s;
+    transition-property: background, color;
 }
 
 .projects ul li:last-child {
@@ -490,6 +493,7 @@ body {
     border-radius: 5px;
     overflow: hidden;
     transition: 0.3s;
+    transition-property: background, color;
     position: relative;
 }
 
@@ -502,7 +506,7 @@ body {
     height: 70.5%;
     width: 100%;
     background: #000;
-    opacity: 0.6;
+    opacity: 0;
     transition: 0.7s;
     position: absolute;
     top: -70.5%;
@@ -521,6 +525,7 @@ body {
 
 .projects article:hover .description {
     top: 0;
+    opacity: 0.6;
 }
 
 .projects article h2 {
@@ -810,7 +815,7 @@ body {
     border-radius: 6px;
     position: relative;
     overflow: hidden;
-    transition: 0.4s;
+    transition: background 0.4s;
 }
 
 .posts .wrapperPosts .post:nth-of-type(3){
@@ -858,7 +863,7 @@ body {
     height: 56%;
     width: 100%;
     background: #000;
-    opacity: 0.6;
+    opacity: 0;
     transition: 0.7s;
     position: absolute;
     top: -56%;
@@ -867,6 +872,7 @@ body {
 
 .posts .wrapperPosts .post:hover .description {
     top: 0;
+    opacity: 0.6;
 }
 
 .posts .wrapperPosts .post h2 {

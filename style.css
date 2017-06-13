@@ -58,7 +58,7 @@ body {
     font-size: 32px;
     transition: 0.3s;
     margin-right: 20px;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 .main .header nav li {
@@ -1904,6 +1904,197 @@ body {
 }
 
 @media all and (max-width: 760px) {
+
+    .main {
+        height: 650px;
+    }
+
+    .main .points {
+        margin: 60px auto 0;
+    }
+
+    .main .header .shop {
+        margin: 15px 0 0 18%;
+    }
+
+    .main .portfolio h2 {
+        font-size: 25px;
+    }
+
+    .main .portfolio h3 {
+        font-size: 33px;
+    }
+
+    .main .portfolio p {
+        width: 402px;
+        margin: 13px auto;
+        font-size: 15px;
+    }
+
+    .allDepartments {
+        width: 432px;
+        height: 465px;
+    }
+
+    .allDepartments .department {
+        width: 200px;
+    }
+
+    .allDepartments .department:nth-child(odd) {
+        margin-left: 0;
+    }
+
+    .allDepartments .department i {
+        font-size: 40px;
+        margin: 0 0 13px 83px;
+    }
+
+    .allDepartments .department h2 {
+        font-size: 19px;
+    }
+
+    .allDepartments .department p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .allDepartments .department p:after {
+        width: 55px;
+    }
+
+    .allDepartments .department:nth-child(3), .allDepartments .department:nth-child(4) {
+        margin-top: 35px;
+    }
+
+    .ideas {
+        height: 414px;
+    }
+
+    .ideas .wrapperIdeas {
+        width: 432px;
+        padding-top: 30px;
+    }
+
+    .ideas .wrapperIdeas h2 {
+        font-size: 23px;
+    }
+
+    .ideas .wrapperIdeas p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 26px;
+        margin: 14px auto;
+    }
+
+    .ideas .wrapperIdeas .slide_center {
+        width: 390px;
+        height: 244px;
+        top: 170px;
+        left: 22px;
+    }
+
+    .ideas .wrapperIdeas .slide_center:hover {
+        transform: scale(1.02) translateY(-2px);
+    }
+
+    .wordpress {
+        height: 140px;
+    }
+
+    .wordpress .wrapperWordpress {
+        padding: 5px;
+    }
+
+    .wordpress .wrapperWordpress h2 {
+        font-size: 25px;
+    }
+
+    .wordpress .wrapperWordpress p {
+        font-size: 16px;
+    }
+
+    .projects > h2 {
+        margin-top: 35px;
+    }
+
+    .projects {
+        height: 1140px;
+    }
+
+    .movie {
+        padding-top: 30px;
+        height: 370px;
+    }
+
+    .movie .play {
+        width: 60px;
+        height: 60px;
+    }
+
+    .movie .play .playRound {
+        width: 61px;
+        height: 61px;
+        background: url(img/play.png) 7px 7px no-repeat;
+        background-size: 47px;
+    }
+
+    .movie .play .playButton {
+        background: url(img/play2.png) 6px 6px no-repeat;
+        width: 60px;
+        height: 60px;
+        background-size: 50px;
+    }
+
+    .movie h2 {
+        font-size: 27px;
+    }
+
+    .movie p {
+        font-size: 15px;
+        line-height: 26px;
+        width: 462px;
+        margin: 12px auto;
+    }
+
+    .mobile {
+        width: 470px;
+    }
+
+    .mobile h2 {
+        font-size: 26px;
+    }
+
+    .mobile p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .mobile ul {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .posts .wrapperPosts > h2 {
+        margin-top: 30px;
+        font-size: 27px;
+    }
+
+    .posts .wrapperPosts > p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .footer .wrapperFooter {
+        width: 424px;
+    }
+
+    .footer .wrapperFooter .topFooter > section {
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 555px) {
+
 
 
 }

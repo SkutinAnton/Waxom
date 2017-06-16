@@ -2095,7 +2095,88 @@ body {
 
 @media all and (max-width: 555px) {
 
+    .main .header .shop {
+        margin: 15px 0 0 12%;
+    }
 
+    .main .portfolio h2 {
+        font-size: 20px;
+    }
+
+    .main .portfolio h3 {
+        font-size: 26px;
+    }
+
+    .main .portfolio p {
+        width: 320px;
+        font-size: 14px;
+    }
+
+    .wordpress .wrapperWordpress h2 {
+        font-size: 21px;
+    }
+
+    .wordpress .wrapperWordpress p {
+        font-size: 14px;
+    }
+
+    .projects {
+        height: 990px;
+        width: 403px;
+    }
+
+    .projects ul {
+        width: 403px;
+    }
+
+    .projects ul li {
+        padding: 4px 2px;
+        font-size: 13px;
+        margin-right: 9px;
+    }
+
+    .projects article {
+        width: 191px;
+        height: 207px;
+    }
+
+    .projects article:nth-of-type(1n) {
+        margin-right: 21px;
+    }
+
+    .projects article:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .projects article img {
+        width: 209px;
+    }
+
+    .projects article h2 {
+        font-size: 14px;
+        margin: 15px 0 0 10px;
+    }
+
+    .projects article h3 {
+        margin: 3px 0 0 10px;
+    }
+
+    .projects article .description {
+        height: 64.5%;
+    }
+
+    .mobile {
+        width: 450px;
+    }
+
+    .footer .wrapperFooter .topFooter .widget {
+        width: 410px;
+    }
+
+    .footer .wrapperFooter .topFooter .widget .block {
+        grid-template-columns: 95px 95px 95px 95px;
+        grid-template-rows: 75px;
+    }
 
 }
 

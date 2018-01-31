@@ -80,7 +80,7 @@ body {
 
 .main .header .shop {
     float: left;
-    margin: 15px 0 0 48px;
+    margin: 15px 0 0 39px;
 }
 
 .main .header .shop i {
@@ -1308,7 +1308,7 @@ body {
     font-size: 13px;
     font-weight: 500;
     border-right: 1px solid #2c2c2c;
-    padding: 0 15px;
+    padding: 0 14px;
     transition: 0.3s;
 }
 
@@ -1452,7 +1452,7 @@ body {
     }
 
     .projects ul {
-        width: 492px;
+        width: 500px;
         margin: 35px auto 32px;
     }
 
@@ -2018,7 +2018,7 @@ body {
     }
 
     .projects {
-        height: 1140px;
+        height: 1180px;
     }
 
     .movie {
@@ -2121,7 +2121,7 @@ body {
     }
 
     .projects {
-        height: 990px;
+        height: 1020px;
         width: 403px;
     }
 
@@ -2132,7 +2132,7 @@ body {
     .projects ul li {
         padding: 4px 2px;
         font-size: 13px;
-        margin-right: 9px;
+        margin-right: 7px;
     }
 
     .projects article {
